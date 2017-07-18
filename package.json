@@ -1,0 +1,24 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "this app will help you find friends that are like you",
+  "main": "friends.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayleabox/FriendFinder.git"
+  },
+  "author": "kaylea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kayleabox/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/kayleabox/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
+}
