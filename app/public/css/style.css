@@ -1,0 +1,54 @@
+body{
+    background-image:url("../images/bgpeas.png");
+    background-size:100%;
+    margin:auto;
+}
+
+a{
+    color:#697351;
+}
+
+nav{
+    font-family: 'Patrick Hand', cursive;
+    background-color:#dbf98b;
+    color: #697251;
+}
+
+.nav-top{
+    border-radius: 0;
+}
+
+.container{
+    font-family: 'Amatic SC', cursive;
+    /*font-family: 'Satisfy', cursive;
+    font-family: 'Handlee', cursive;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Patrick Hand', cursive;*/
+}
+
+.jumbotron{
+    background-color:#dbf98b;
+    color: #697251;
+    margin-top:50px;
+    opacity:.9;
+}
+
+.panel-heading{
+    background-color:#dbf98b;
+}
+
+.green-btn{
+    background-color: #90bf13;
+    color: #697251;
+    font-weight:700;
+}
+
+.white-btn{
+    background-color: #697251;
+    color: #90bf13;
+    font-weight: 700;
+}
+
+.panel{
+    opacity: .9;
+}
