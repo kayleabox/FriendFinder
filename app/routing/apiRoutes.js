@@ -13,7 +13,7 @@ app.use(bodyParser.json({type: "application/vnd.api+json"}));
 
 // Search for Specific Character (or all characters) - provides JSON
 app.get("/api/:Peas?", function(req, res) {
-  var chosen = req.Peas;
+  var chosen = req.params.Peas;
 
   if (chosen) {
     console.log(chosen);
