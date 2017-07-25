@@ -40,7 +40,7 @@ var user = "";
         //  comp[best[0]].dif +"</strong><form id='select-peas'></form></div>");
         for (i = 0; i < best.length; i++) {
             var b = best[i];
-            $("#select-peas").append("<div><input name='match' type='checkbox' value='" + data[b].name + "'>" + i + ": " + data[b].name + "</input></div>");
+            $("#select-peas").append("<div><input name='match' type='checkbox' value='" + data[b].name + "'>" + i + ": " + data[b].name + "<img style='width:60px;' src='" + data[b].photo + "'</input></div>");
         }
 
     });  
@@ -70,6 +70,8 @@ $(document).on("click", "#add-pea", function (event) {
             }
             addedStr += " to your pod!";
 
-            $(".panel-body").html(addedStr);
+            $(".panel-body").html(addedStr+
+                '<div class="text-right"><a href="/profile/'+user+'"><button type="button" class="btn btn-md green-btn">'+
+                '<span><img style="width:20px" src="images/pea2.png"></span> Profile</button></a></div>');
         })
 })

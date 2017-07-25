@@ -8,8 +8,12 @@ $.get(path)
 .done(function (data) {
     console.log(data);
     if(data.matches){
-        for(i=0; i<data.matches.length; i++){
-            $("#friend-peas").append("<p>"+data.matches[i]+"</p>");
+        var matches = data.matches
+        for(i=0; i<matches.length; i++){
+            $.get("/api/"+matches[i])
+            .done(function(data){
+                $("#friend-peas").append("<div><p>"+data.name+"</p><img style='width:60px;' src='" + data.photo + "'></div>");
+            })
         }
     }
     else{
